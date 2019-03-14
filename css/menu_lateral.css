@@ -1,0 +1,12 @@
+.nav-stacked a{
+    color: #333;
+}
+
+.nav-stacked a:hover{
+    color: #FFF;
+}
+
+.paddings {
+    padding:10px;
+
+}

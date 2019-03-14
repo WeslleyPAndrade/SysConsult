@@ -1,0 +1,13 @@
+table .espaco{
+    padding: 10px;
+
+}
+
+table .borda{
+    border: 1px solid #888;
+    border-collapse: separate;
+}
+
+td .borda{
+    border: 1px solid #888;
+}
