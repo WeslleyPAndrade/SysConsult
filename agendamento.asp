@@ -17,8 +17,7 @@ if (request("medico") <> 0) then
 
         Set Mail = Server.CreateObject("Persits.MailSender")
 
-        Mail.host = "smtp.gmail.com"
-        Mail.from = "weslleyp.andrade@gmail.com"
+        
 
         
 
@@ -27,7 +26,7 @@ if (request("medico") <> 0) then
             Mail.body = "<html><body>"&_
                 "<table class="col-md-offset-4">"&_
                 "<tr>"&_
-                  "<td class="borda paddings">Médico</td>"&_
+                  "<td class="borda paddings">Mï¿½dico</td>"&_
                   "<td class="borda paddings"><%=codigo_consulta("nome_medico") %></td>"&_
                 "</tr>"&_
                 "<tr>"&_
@@ -43,7 +42,7 @@ if (request("medico") <> 0) then
             On Error Resume Next
             Mail.send
             if Err <> "" then
-                response.write "Erro, não pode completar a operação"
+                response.write "Erro, nï¿½o pode completar a operaï¿½ï¿½o"
             else
                 response.write "Consulta Marcada"
         end if
